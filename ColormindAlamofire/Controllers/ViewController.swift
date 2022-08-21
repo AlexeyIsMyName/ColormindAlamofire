@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -15,7 +16,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPressed() {
+        let url = "http://colormind.io/api/"
         
+        AF.request(url, headers: ["model": "default"])
+            .response { responseData in
+                print("DATA: ", responseData)
+            }
     }
     
 }
