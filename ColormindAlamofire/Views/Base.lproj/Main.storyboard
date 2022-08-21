@@ -77,8 +77,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="paletteViews" destination="Lmj-8b-lei" id="IgH-O2-3LA"/>
-                        <outlet property="viewOne" destination="Lmj-8b-lei" id="rKl-ad-UJk"/>
                         <outletCollection property="paletteViews" destination="Lmj-8b-lei" collectionClass="NSMutableArray" id="LMH-1x-8p1"/>
                         <outletCollection property="paletteViews" destination="dEB-iz-hGT" collectionClass="NSMutableArray" id="sYf-sZ-5wz"/>
                         <outletCollection property="paletteViews" destination="yjV-BD-YZL" collectionClass="NSMutableArray" id="SOy-jm-Bba"/>
