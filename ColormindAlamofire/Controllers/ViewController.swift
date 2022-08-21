@@ -32,14 +32,17 @@ class ViewController: UIViewController {
     
     private func updateUI(with palette: Palette) {
         zip(paletteViews, palette.colors).forEach { (view, color) in
-            
-            let colorUI = UIColor(red: CGFloat(color[.red]!),
-                                  green: CGFloat(color[.green]!),
-                                  blue: CGFloat(color[.blue]!),
-                                                alpha: 1.0)
+            let colorUI = UIColor(red: getCGFloatColorNumber(from: color[.red]),
+                                  green: getCGFloatColorNumber(from: color[.green]),
+                                  blue: getCGFloatColorNumber(from: color[.blue]),
+                                  alpha: 1.0)
             
             view.backgroundColor = colorUI
         }
+    }
+    
+    private func getCGFloatColorNumber(from eightBitColorNumber: Int?) -> CGFloat {
+        return (CGFloat(eightBitColorNumber ?? 1) * CGFloat(1)) / CGFloat(255)
     }
 }
 
