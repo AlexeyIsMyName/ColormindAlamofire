@@ -18,11 +18,16 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed() {
         let url = "http://colormind.io/api/"
         
-        AF.request(url, headers: ["model": "default"])
-            .response { responseData in
-                print("DATA: ", responseData)
+        AF.request(url, method: .post, parameters: ["model": "default"], encoder: .json)
+            .validate()
+            .responseJSON { responseData in
+                switch responseData.result {
+                case .success(let value):
+                    print("AFvalue", value)
+                case .failure(let error):
+                    print("AFerror", error)
+                }
             }
     }
-    
 }
 
