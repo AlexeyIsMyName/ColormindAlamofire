@@ -22,11 +22,20 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apH-ue-IJH">
-                                                <rect key="frame" x="146.5" y="196.5" width="121.5" height="55"/>
+                                                <rect key="frame" x="82" y="72" width="250" height="55"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Pre-EI-OJ4"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                <buttonConfiguration key="configuration" style="plain" title="Refrash Colors">
                                                     <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="PAJ-kA-nlf"/>
                                                 </connections>
@@ -34,8 +43,8 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.98823529409999999" green="0.8862745098" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="apH-ue-IJH" firstAttribute="centerY" secondItem="Lmj-8b-lei" secondAttribute="centerY" id="RUS-kj-tel"/>
-                                            <constraint firstItem="apH-ue-IJH" firstAttribute="centerX" secondItem="Lmj-8b-lei" secondAttribute="centerX" id="d1E-GT-eIc"/>
+                                            <constraint firstItem="apH-ue-IJH" firstAttribute="centerX" secondItem="Lmj-8b-lei" secondAttribute="centerX" id="5sB-Uc-nBV"/>
+                                            <constraint firstItem="apH-ue-IJH" firstAttribute="top" secondItem="Lmj-8b-lei" secondAttribute="topMargin" constant="20" id="slM-NE-MsC"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jfr-4g-YoA">

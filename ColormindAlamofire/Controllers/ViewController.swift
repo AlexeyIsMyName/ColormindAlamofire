@@ -37,7 +37,9 @@ class ViewController: UIViewController {
                                   blue: getCGFloatColorNumber(from: color[.blue]),
                                   alpha: 1.0)
             
-            view.backgroundColor = colorUI
+            UIView.animate(withDuration: 0.5) {
+                view.backgroundColor = colorUI
+            }
         }
     }
     
