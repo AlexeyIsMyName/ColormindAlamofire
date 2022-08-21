@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         AF.request(url, method: .post, parameters: ["model": "default"], encoder: .json)
             .validate()
-            .responseJSON { responseData in
+            .responseDecodable(of: [String: [[Int]]].self) { responseData in
                 switch responseData.result {
                 case .success(let value):
                     print("AFvalue", value)
