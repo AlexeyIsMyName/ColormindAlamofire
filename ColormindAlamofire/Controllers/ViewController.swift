@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func buttonPressed() {
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         AF.request(url, method: .post, parameters: ["model": "default"], encoder: .json)
             .validate()
-            .responseDecodable(of: [String: [[Int]]].self) { responseData in
+            .responseDecodable(of: PaletteJSONData.self) { responseData in
                 switch responseData.result {
                 case .success(let value):
                     print("AFvalue", value)
