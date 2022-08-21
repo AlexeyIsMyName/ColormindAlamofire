@@ -80,15 +80,39 @@
 		E799CC3B28B246E500B60124 /* ColormindAlamofire */ = {
 			isa = PBXGroup;
 			children = (
-				E799CC3C28B246E500B60124 /* AppDelegate.swift */,
-				E799CC3E28B246E500B60124 /* SceneDelegate.swift */,
-				E799CC4028B246E500B60124 /* ViewController.swift */,
-				E799CC4228B246E500B60124 /* Main.storyboard */,
+				E799CC5028B2487300B60124 /* SupportingFiles */,
+				E799CC5228B2489C00B60124 /* Controllers */,
+				E799CC5128B2489400B60124 /* Views */,
 				E799CC4528B246E700B60124 /* Assets.xcassets */,
-				E799CC4728B246E700B60124 /* LaunchScreen.storyboard */,
-				E799CC4A28B246E700B60124 /* Info.plist */,
 			);
 			path = ColormindAlamofire;
+			sourceTree = "<group>";
+		};
+		E799CC5028B2487300B60124 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E799CC3C28B246E500B60124 /* AppDelegate.swift */,
+				E799CC3E28B246E500B60124 /* SceneDelegate.swift */,
+				E799CC4A28B246E700B60124 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E799CC5128B2489400B60124 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E799CC4228B246E500B60124 /* Main.storyboard */,
+				E799CC4728B246E700B60124 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E799CC5228B2489C00B60124 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E799CC4028B246E500B60124 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,7 +382,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZG8HC24927;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColormindAlamofire/Info.plist;
+				INFOPLIST_FILE = ColormindAlamofire/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -387,7 +411,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZG8HC24927;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColormindAlamofire/Info.plist;
+				INFOPLIST_FILE = ColormindAlamofire/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
