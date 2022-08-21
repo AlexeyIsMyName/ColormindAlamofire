@@ -14,6 +14,7 @@
 		E799CC4428B246E500B60124 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E799CC4228B246E500B60124 /* Main.storyboard */; };
 		E799CC4628B246E700B60124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E799CC4528B246E700B60124 /* Assets.xcassets */; };
 		E799CC4928B246E700B60124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E799CC4728B246E700B60124 /* LaunchScreen.storyboard */; };
+		E799CC5428B26E7100B60124 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799CC5328B26E7100B60124 /* Palette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E799CC4528B246E700B60124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E799CC4828B246E700B60124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E799CC4A28B246E700B60124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E799CC5328B26E7100B60124 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		E89A9FE0261F1E2EFBB1ABA5 /* Pods-ColormindAlamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColormindAlamofire.release.xcconfig"; path = "Target Support Files/Pods-ColormindAlamofire/Pods-ColormindAlamofire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,8 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				E799CC5028B2487300B60124 /* SupportingFiles */,
-				E799CC5228B2489C00B60124 /* Controllers */,
+				E799CC5528B26E7500B60124 /* Models */,
 				E799CC5128B2489400B60124 /* Views */,
+				E799CC5228B2489C00B60124 /* Controllers */,
 				E799CC4528B246E700B60124 /* Assets.xcassets */,
 			);
 			path = ColormindAlamofire;
@@ -113,6 +116,14 @@
 				E799CC4028B246E500B60124 /* ViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E799CC5528B26E7500B60124 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E799CC5328B26E7100B60124 /* Palette.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 				E799CC4128B246E500B60124 /* ViewController.swift in Sources */,
 				E799CC3D28B246E500B60124 /* AppDelegate.swift in Sources */,
 				E799CC3F28B246E500B60124 /* SceneDelegate.swift in Sources */,
+				E799CC5428B26E7100B60124 /* Palette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
