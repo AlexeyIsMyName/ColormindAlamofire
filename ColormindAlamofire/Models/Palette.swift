@@ -10,10 +10,8 @@ struct PaletteJSONData: Decodable {
 }
 
 struct Palette {
-    let colorOne: (red: Int, green: Int, blue: Int)
-    let colorTwo: (red: Int, green: Int, blue: Int)
-    let colorThree: (red: Int, green: Int, blue: Int)
-    let colorFour: (red: Int, green: Int, blue: Int)
-    let colorFive: (red: Int, green: Int, blue: Int)
+    
+    
+    let colors: [Int]
     
 }

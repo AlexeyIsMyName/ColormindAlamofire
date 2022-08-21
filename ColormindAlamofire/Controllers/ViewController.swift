@@ -10,6 +10,8 @@ import Alamofire
 
 class ViewController: UIViewController {
 
+    @IBOutlet var paletteViews: [UIView]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
